@@ -13,7 +13,10 @@ fi
 ## if no root, Sudo me up!
 [ $(id -u) -ne 0 ] && exec sudo $0 $SUDOARGS
 
+echo "deb http://repo.ubports.com/ xenial main" > /etc/apt/sources.list.d/ubports.list
 echo "deb http://repo.ubports.com/ xenial_-_mir26 main" >> /etc/apt/sources.list.d/ubports.list
+
+echo "deb http://repo.ubports.com/ xenial_-_mir29 main" >> /etc/apt/sources.list.d/ubports.list
 apt update
 
 echo "I will do a dist upgrade!"
