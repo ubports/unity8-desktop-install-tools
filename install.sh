@@ -45,6 +45,8 @@ apt upgrade -y
 ## Install unity8 desktop sessions
 apt install -y unity8-desktop-session-mir unity8-desktop-session
 
+apt update && apt upgrade -y
+
 ## Done, let's tell the user
 echo "------ DONE ------"
 echo "You can now logout and select unity8"
