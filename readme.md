@@ -21,4 +21,4 @@ Also this will probably *NOT* work with proprietary drivers
 Most things seems to work.
 
 Does not work:
-- Wayland apps (mir 0.29)
+- Non known
