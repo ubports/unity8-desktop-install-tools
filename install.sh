@@ -40,12 +40,13 @@ add-apt-repository ppa:ci-train-ppa-service/stable-phone-overlay -y
 apt update
 
 ## Do apt upgrade
-apt upgrade -y
+apt upgrade -y --allow-downgrades
 
 ## Install unity8 desktop sessions
 apt install -y unity8-desktop-session-mir unity8-desktop-session
 
-apt update && apt upgrade -y
+apt update && apt upgrade -y --allow-downgrades
+
 
 ## Done, let's tell the user
 echo "------ DONE ------"
