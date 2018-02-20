@@ -65,10 +65,16 @@ function xenial_install {
   Pin-Priority: 5000
 EOL
 
+<<<<<<< HEAD
   do_install
 }
+=======
+## Do apt upgrade
+apt upgrade -y --allow-downgrades
+>>>>>>> 24cf63da1e4416b28ffc30f768364f9fcba1d924
 
 
+<<<<<<< HEAD
 case $UBUNTU_CODENAME in
   "xenial")
     xenial_install
@@ -77,3 +83,11 @@ case $UBUNTU_CODENAME in
     install
    ;;
 esac
+=======
+apt update && apt upgrade -y --allow-downgrades
+
+
+## Done, let's tell the user
+echo "------ DONE ------"
+echo "You can now logout and select unity8"
+>>>>>>> 24cf63da1e4416b28ffc30f768364f9fcba1d924
