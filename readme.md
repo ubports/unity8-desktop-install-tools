@@ -6,13 +6,13 @@ Also this will probably *NOT* work with proprietary drivers
 
 ### How to install
 
-1. Clone this repo
-2. Run the install script
+*NOTE* This current only works on Ubuntu xenial and bionic
 
+1. Run the install script
 ```
-./install.sh
+bash <(curl -s https://raw.githubusercontent.com/ubports/unity8-desktop-install-tools/master/install.sh)
 ```
-3. Logout, select "unity8" and enjoy :)
+2. Logout, select "unity8" and enjoy :)
 
 
 ### What works / what does not works
@@ -22,4 +22,3 @@ Most things seems to work.
 
 Does not work:
 - most Xapps
-
