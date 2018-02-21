@@ -10,7 +10,7 @@ Also this will probably *NOT* work with proprietary drivers
 
 1. Run the install script
 ```
-bash <(curl -s https://raw.githubusercontent.com/ubports/unity8-desktop-install-tools/master/install.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/ubports/unity8-desktop-install-tools/master/install.sh)
 ```
 2. Logout, select "unity8" and enjoy :)
 
