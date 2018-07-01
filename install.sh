@@ -17,11 +17,8 @@ function do_install {
   ## Do apt upgrade
   sudo apt upgrade -y --allow-downgrades
 
-  echo "If you get an option to select display manager, please select lightdm!"
-  read -p "Press enter to continue"
-
-  ## Install unity8 desktop session and lightdm
-  sudo apt install -y unity8-desktop-session lightdm
+  ## Install unity8 desktop session
+  sudo apt install -y unity8-desktop-session
 
   ## Done, let's tell the user
   echo "------ DONE ------"
@@ -47,9 +44,6 @@ function xenial_install {
 
   ## Add temp repo until merged into the main repo
   echo "deb http://repo.ubports.com/ xenial_-_mir26 main" | sudo tee -a /etc/apt/sources.list.d/ubports.list
-
-  ## This will be removed once all packages have been moved to ubports repo
-  sudo add-apt-repository ppa:ci-train-ppa-service/stable-phone-overlay -y
 
   ## Add pin
   sudo tee /etc/apt/preferences.d/ubports.pref << EOL
