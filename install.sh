@@ -26,6 +26,9 @@ function do_install {
 }
 
 function setup_repo {
+  ## Make sure gnupg is installed
+  sudo apt install gnupg
+
   ## Setup ubports repo
   echo "deb http://repo.ubports.com/ $UBUNTU_CODENAME main" | sudo tee /etc/apt/sources.list.d/ubports.list
 
