@@ -1,24 +1,9 @@
-## Unity8 for desktops
+### How to install Unity8 for desktops
 
-*NOTE* this is still under development, expect bugs!
+To install Unity8 for desktops, please see the instructions found in the [Unity8](https://github.com/ubports/unity8/) repository.
 
-Also this will probably *NOT* work with proprietary drivers
+### Where to report issues
 
-### How to install
+Only issues related to the desktop installer should be reported on the issue tracker in this repository.
 
-*NOTE* This current only works on Ubuntu xenial and bionic
-
-1. Run the install script
-```
-bash <(wget -qO- https://raw.githubusercontent.com/ubports/unity8-desktop-install-tools/master/install.sh)
-```
-2. Logout, select "unity8" and enjoy :)
-
-
-### What works / what does not works
-*This list is incomplete, please help improve it*
-
-Most things seems to work.
-
-Does not work:
-- most Xapps
+Issues related to the version of Unity8 for desktop (the latest development preview) installed using this installer should be reported on the [Unity8 issue tracker](https://github.com/ubports/unity8/issues).
