@@ -41,6 +41,11 @@ function install {
   do_install
 }
 
+function need_lightdm {
+  echo "If you get an option to select display manager, please select lightdm!"
+  read -p "Press enter to continue"
+  sudo apt install -y lightdm
+}
 
 function xenial_install {
   setup_repo
@@ -60,6 +65,7 @@ function xenial_install {
 EOL
 
   do_install
+  need_lightdm
 }
 
 
