@@ -36,7 +36,7 @@ function setup_repo {
   wget http://repo.ubports.com/keyring.gpg -O - | sudo apt-key add -
 }
 
-function install {
+function _install {
   setup_repo
   do_install
 }
@@ -74,6 +74,6 @@ case $UBUNTU_CODENAME in
     xenial_install
   ;;
   "bionic")
-    install
+    _install
    ;;
 esac
