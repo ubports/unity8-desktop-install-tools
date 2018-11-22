@@ -51,7 +51,8 @@ function xenial_install {
   setup_repo
 
   ## Add temp repo until merged into the main repo
-  echo "deb http://repo.ubports.com/ xenial_-_mir26 main" | sudo tee -a /etc/apt/sources.list.d/ubports.list
+  echo "deb http://repo.ubports.com/ xenial_-_edge main" | sudo tee -a /etc/apt/sources.list.d/ubports.list
+  echo "deb http://repo.ubports.com/ xenial_-_edge_-_mir main" | sudo tee -a /etc/apt/sources.list.d/ubports.list
 
   ## Add pin
   sudo tee /etc/apt/preferences.d/ubports.pref << EOL
@@ -60,8 +61,12 @@ function xenial_install {
   Pin-Priority: 2000
 
   Package: *
-  Pin: release a=xenial_-_mir26
+  Pin: release a=xenial_-_edge
   Pin-Priority: 5000
+  
+    Package: *
+  Pin: release a=xenial_-_edge_-_mir
+  Pin-Priority: 6000
 EOL
 
   do_install
